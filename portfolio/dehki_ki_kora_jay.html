@@ -3,14 +3,14 @@
     * {
         padding: 0;
         margin: 0;
-        font-family: cursive ;
+        font-family: cursive;
         box-sizing: border-box;
     }
 
     .hero {
         height: 100vh;
         width: 100%;
-        background-image: url("shuvo.png");
+        background-image: url("bluepic.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -29,8 +29,94 @@
         font-size: 35px;
         cursor: pointer;
     }
-    span{
+
+    span {
         color: red
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+
+    nav ul li a {
+        color: rgb(101, 6, 255);
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    nav ul li a:hover {
+        color: rgb(255, 0, 179);
+        transition: .4s;
+    }
+
+    .btn {
+        background-color: red;
+        color: aliceblue;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bolder;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: transform .4s;
+    }
+
+    .btn:hover {
+        transform: scale(1.2);
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50);
+    }
+
+    h1 {
+        color: white;
+        margin: 20px 0px 20px;
+        font-size: 75px;
+    }
+
+    h3 {
+        color: aliceblue;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        color: rgb(226, 183, 223);
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .newslatter form {
+        width: 380px;
+        max-width: 100%;
+        position: relative;
+    }
+    .newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14 px 15px;
+    border: 2px solid ;
+    outline: none;
+    border-radius: 30px;
+    }
+    .newslatter form input:last-child{
+        position: absolute;
+        display: inline-block;
+        outline: none;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: red;
+        color: aliceblue;
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+        top:6px;
+        right: 6px;
     }
 </style>
 
@@ -49,6 +135,17 @@
             </ul>
             <a href="#" class="btn">Suscribe</a>
         </nav>
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Shawon Ahmed Shuvo</h1>
+            <h3>I'm a student.</h3>
+            <div class="newslatter">
+                <form>
+                    <input type="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="lets Start">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </head>
