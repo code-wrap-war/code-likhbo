@@ -1,18 +1,54 @@
 <!DOCTYPE html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: cursive ;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: url("shuvo.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 45px;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    .logo {
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    span{
+        color: red
+    }
+</style>
+
 <head>
-    <body>
+
+<body>
     <!--hero Section Start-->
-        <div class="hero">
-            <nav>
-                <h2 class="logo">Portfolio</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <a href="#" class="btn">Suscribe</a>
-            </nav>
-        </div>
-    </body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn">Suscribe</a>
+        </nav>
+    </div>
+</body>
 </head>
